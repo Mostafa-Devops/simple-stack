@@ -1,12 +1,14 @@
 version: "3.9"
 
 services:
-  hello:
-    image: hello-world
+  hello-web:
+    image: nginxdemos/hello:latest
     deploy:
       replicas: 3
       placement:
         constraints:
           - node.role == worker
       restart_policy:
-        condition: none
+        condition: on-failure
+    ports:
+      - "5000:80"  # Host port 5000 → Container port 80
