@@ -10,7 +10,6 @@ services:
         constraints:
           - node.role == worker
           - node.labels.client == true
-          - node.labels.celery   == true
       restart_policy:
         condition: on-failure
     ports:
