@@ -5,7 +5,7 @@ services:
     image: nginxdemos/hello:latest
     
     deploy:
-      replicas: 2
+      mode: global
       placement:
         constraints:
           - node.role == manager
