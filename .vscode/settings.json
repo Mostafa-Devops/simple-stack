@@ -1,0 +1,5 @@
+{
+    "yaml.schemas": {
+        "https://raw.githubusercontent.com/compose-spec/compose-go/master/schema/compose-spec.json": "file:///tmp/simple-stack/docker-stack.yml"
+    }
+}
