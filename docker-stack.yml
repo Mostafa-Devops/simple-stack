@@ -5,7 +5,7 @@ services:
     image: nginxdemos/hello:latest
     
     deploy:
-      replicas: 1
+      replicas: 2
       placement:
         constraints:
           - node.role == worker
