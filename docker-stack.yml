@@ -8,8 +8,8 @@ services:
       replicas: 2
       placement:
         constraints:
-          - node.role == worker
-          - node.labels.client == true
+          - node.role == manager
+#          - node.labels.client == true
       restart_policy:
         condition: on-failure
     ports:
